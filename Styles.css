@@ -1,0 +1,122 @@
+body {
+  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
+  background-color: purple;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D1B2A;
+  color: #fff;
+  padding: 16px 32px;
+  position: relative;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1E90FF;
+}
+
+section id {
+  font-family: Arial Black,Arial Bold,Gadget,sans-serif; 
+}
+
+img {
+  width: 75%;
+  length: 50%;
+  height: 50%;
+  max-width: 100%;
+}
+
+p {
+  font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;  
+  color: purple;
+  font-size: 21px;
+}
+
+section {
+  padding: 20px;
+  margin: 50px;
+  border: 7px solid #000000;
+}
+
+.vintage {
+  background-color: green;
+}
+
+.colorbg {
+  background-color: white;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #1E90FF;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+
+  .soc_icon {
+    width: 30px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .main-nav.active {
+    display: block;
+  }
+
+  .computerimg {
+    width: 100%;
+    height: auto;
+    border: 2px solid #FF00CC;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
